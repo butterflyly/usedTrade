@@ -1,0 +1,333 @@
+/* mypage.css */
+
+
+
+.mypage-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;   /* ⭐ 가로 중앙 */
+    margin-bottom: 30px;
+    text-align: left;          /* 텍스트는 자연스럽게 */
+}
+
+.profile-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.user-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+}
+
+.liked-post {
+    padding: 8px 0;
+}
+
+.liked-post a {
+    text-decoration: none;
+    color: #333;
+}
+
+.liked-post a:hover {
+    text-decoration: underline;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.action-buttons a,
+.action-buttons button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.action-buttons a {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.action-buttons button {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-row a {
+    color: #333;
+    text-decoration: none;
+}
+
+.item-row a:hover {
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.status {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.status.selling {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status.done {
+    background: #eee;
+    color: #555;
+}
+
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.tab-btn.active {
+    background: #333;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* 마이페이지 카드 간격 조정 */
+.grid-container.mypage {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* 고정 */
+   gap: 20px;
+
+   max-width: 1000px;
+   margin: 0 auto; /* 중앙 고정 */
+
+   justify-content: center;
+}
+
+/* ===== 카드 ===== */
+.grid-item.mypage {
+    display: block;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 마이페이지 상태 뱃지 */
+.mypage .status {
+    display: inline-block;
+    margin: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    color: white;
+}
+
+.status.selling {
+    background-color: #28a745;
+}
+
+/* 찜 표시 */
+.mypage-tag {
+    margin: 0 10px 10px;
+    font-size: 13px;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.status.completed {
+    background-color: #6c757d;
+}
+
+/* ===================== */
+/* Pagination (MyPage) */
+/* ===================== */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 30px 0 10px;
+    flex-wrap: wrap;
+    min-height: 44px;   /* ← 핵심 */
+
+
+}
+
+/* 공통 버튼 */
+.pagination a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.pagination a:hover {
+    background: #0d6efd;
+    color: #fff;
+
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 현재 페이지 */
+.pagination a.active {
+    background: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+    pointer-events: none; /* 클릭 방지 */
+}
+
+/* 이전/다음 */
+.pagination a:first-child,
+.pagination a:last-child {
+    font-weight: 600;
+}
+
+/* 비활성 (옵션용) */
+.pagination a.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.grid-item.mypage img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===================== */
+/* 반응형 */
+
+/* ===================== */
+
+@media (max-width: 768px) {
+    .pagination a {
+        min-width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+
+.badge {
+    display: none;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review-card {
+    display: flex;
+    gap: 16px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+.review-card img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.review-info h4 {
+    margin: 0 0 6px;
+}
+
+.review-info .buyer {
+    font-size: 13px;
+    color: #666;
+}
+
+.review-info .content {
+    font-size: 14px;
+    margin-top: 6px;
+}

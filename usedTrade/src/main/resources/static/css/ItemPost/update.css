@@ -1,0 +1,110 @@
+#error-box {
+    display: none;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    background: #fff5f5;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.update-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;   /* 당근 느낌 */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* 왼쪽: 이미지 영역 */
+.image-section {
+    width: 40%;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+/* 오른쪽: 폼 영역 */
+.form-section {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.update-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;   /* 당근 느낌 */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* 왼쪽: 이미지 영역 */
+.image-section {
+    width: 40%;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+/* 오른쪽: 폼 영역 */
+.form-section {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.form-section label {
+    font-weight: 600;
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-section textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-section button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    background: #ff6f0f; /* 당근 느낌 */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background: #e65c00;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    .update-container {
+        flex-direction: column;
+    }
+
+    .image-section,
+    .form-section {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+}

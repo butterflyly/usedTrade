@@ -1,0 +1,105 @@
+/* 전체 래퍼 */
+.user-update-wrapper {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* 제목 */
+.user-update-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* 구분선 */
+.user-update-wrapper hr {
+    border: none;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 25px;
+}
+
+/* 입력 그룹 */
+.user-update-wrapper label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.user-update-wrapper input[type="text"],
+.user-update-wrapper input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.user-update-wrapper input:focus {
+    outline: none;
+    border-color: #4a6cf7;
+}
+
+/* 프로필 이미지 */
+.profile-preview {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-preview img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+/* 에러 메시지 */
+#errorBox {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* 버튼 영역 */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.button-group button,
+.button-group a {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 버튼 스타일 */
+.btn-primary {
+    background: #4a6cf7;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #3b5be0;
+}
+
+.btn-secondary {
+    background: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #e2e2e2;
+}

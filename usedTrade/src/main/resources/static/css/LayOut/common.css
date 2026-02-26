@@ -1,0 +1,228 @@
+/* =========================
+   공통 헤더/푸터/네비 스타일
+   ========================= */
+
+
+.hidden {
+    display: none;
+}
+
+/* 헤더 전체 */
+.site-header {
+    background-color: #1a1a1a;  /* 진한 회색 */
+    color: #eee;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* 사이트 타이틀 */
+.site-title {
+    margin: 0;
+    font-size: 26px;          /* 글자 키우기 */
+    font-weight: 700;         /* 더 굵게 */
+    color: #ffcc00;           /* 눈에 띄는 색 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* 살짝 그림자 */
+}
+
+/* 네비게이션 */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+   width: 100%;
+   margin: 30px auto;
+   padding: 0;
+}
+
+.main-nav a {
+    color: #eee;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 로그인/회원가입 버튼 */
+#auth-buttons a,
+#auth-buttons button {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#auth-buttons a:hover,
+#auth-buttons button:hover {
+    background-color: #666;
+}
+
+/* 드롭다운 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #666;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2b2b2b;
+    min-width: 160px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: #eee;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* =========================
+   푸터 스타일
+   ========================= */
+.site-footer {
+    background: #e0e0e0;   /* 중간 회색 배경 */
+    color: #555;            /* 텍스트 회색 */
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.footer-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-meta p {
+    margin: 4px 0;
+    text-align: right;
+}
+
+.footer-meta a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-meta a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* 이미지가 있다면 흑백 처리 */
+.site-footer img {
+    filter: grayscale(100%);
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh; /* 화면 전체 높이 */
+}
+
+
+
+/* =========================
+   반응형
+   ========================= */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    #auth-buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-meta {
+        text-align: left;
+    }
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    overflow-y: scroll;
+}

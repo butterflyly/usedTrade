@@ -1,0 +1,83 @@
+.chat-list-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.chat-list-container h2 {
+    margin-bottom: 20px;
+}
+
+.chat-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 20px;
+    margin-bottom: 12px;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+
+    transition: background 0.2s, transform 0.1s;
+}
+
+.chat-room.hover {
+    background: #f9f9f9;
+    transform: translateY(-2px);
+}
+
+.chat-room .left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chat-room .nickname {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat-room .role {
+    font-size: 13px;
+    color: #777;
+}
+
+.unread-badge {
+    background: #ff4d4f;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.empty {
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 페이징 */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 6px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #333;
+}
+
+.pagination a.active {
+    background: #333;
+    color: white;
+}

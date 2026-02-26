@@ -1,0 +1,74 @@
+/* 전체 폼 */
+form {
+    max-width: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* 항목 간 간격 */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* label */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* input + 버튼 한 줄 */
+.input-row {
+    display: flex;
+    gap: 8px;
+}
+
+/* 입력창 */
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 버튼 */
+button {
+    padding: 8px 12px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* 변경 버튼 */
+.change-btn {
+    display: none;
+    background: #999;
+}
+
+/* 제출 버튼 */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.error-text {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}

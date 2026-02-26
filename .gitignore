@@ -1,0 +1,13 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Gradle
+/build/
+/.gradle/
+
+# OS
+.DS_Store
+
+# Application config (DB 비번 보호)
+src/main/resources/application.properties
